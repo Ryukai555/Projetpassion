@@ -1,0 +1,48 @@
+header {
+    position: relative; /* pour que le logo puisse se positionner par rapport au header */
+}
+
+/* Nav style */
+header .nav {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: solid #202020;
+    padding: 10px; /* espace autour du menu pour que le logo ne coupe pas le texte */
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* Logo superposé à gauche */
+.logo {
+    position: absolute;
+    left: 0;
+    top: 50%; 
+    transform: translateY(-50%); /* centre verticalement par rapport à la nav */
+    width: 200px; /* largeur du logo, ajuste selon tes besoins */
+    z-index: 10; /* devant la nav */
+}
+
+.logo img {
+    width: 100%;
+    display: block;
+    
+}
+
+/* Menu à droite de l’espace laissé par le logo */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end; /* pousse les items à droite */
+    font-family: Orbitron;
+    font-size: 20px;
+    margin-left: 100px; /* laisse de l’espace pour le logo */
+   
+}
+
+/* Option alternative : seulement sur le premier bouton */
+nav ul li:first-child {
+    margin-left: 40px; /* espace entre logo et "Accueil" */
+}

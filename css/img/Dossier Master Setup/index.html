@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MasterSetup.gg</title>
+  <link rel="icon" href="./favicon.ico">
+
+  <!-- Polices auto-hébergées (préload) -->
+  <link rel="preload" href="assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Orbitron-Variable.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Feuille de style -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- HEADER avec arrière-plan -->
+  <header class="site-header header-bg" id="site-header">
+    <div class="topbar">
+      <div class="container bar-grid">
+
+        <!-- Se connecter -->
+        <div class="bar-left">
+          <a class="hud-btn" href="#" aria-label="Se connecter">
+            <img
+              src="assets/img/ui/second-connect-450x140.webp"
+              srcset="assets/img/ui/second-connect-300x94.webp 300w,
+                      assets/img/ui/second-connect-450x140.webp 450w,
+                      assets/img/ui/second-connect-600x180.webp 600w"
+              sizes="(max-width:640px) 300px, 450px"
+              width="450" height="140" alt="Se connecter" loading="eager" decoding="async">
+          </a>
+        </div>
+
+        <!-- Logo centre -->
+        <a href="#" class="ms-logo" aria-label="MasterSetup.gg Accueil">
+          <picture>
+            <source srcset="mastersetup_logo/logo-512.webp" type="image/webp">
+            <img src="mastersetup_logo/logo-512.png"
+                 alt="Logo Master Setup" class="logo-img"
+                 width="512" height="512" loading="eager" decoding="async">
+          </picture>
+          <span class="sr-only">MasterSetup.gg</span>
+        </a>
+
+        <!-- Panier (sans compteur) -->
+        <div class="bar-right">
+          <a class="hud-btn ms-cart" href="#" id="ms-cart-link" aria-label="Panier">
+            <img
+              src="assets/img/ui/second-panier-450x140.webp"
+              srcset="assets/img/ui/second-panier-300x94.webp 300w,
+                      assets/img/ui/second-panier-450x140.webp 450w,
+                      assets/img/ui/second-panier-600x180.webp 600w"
+              sizes="(max-width:640px) 300px, 450px"
+              width="450" height="140" alt="Panier" loading="eager" decoding="async">
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Onglets + Recherche -->
+    <div class="container">
+      <nav class="tabs" role="tablist" aria-label="Catégories">
+        <button class="tab is-active" role="tab" aria-selected="true" data-tab="accueil">Accueil</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="pc-setup">Pc Setup</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="console-setup">Console Setup</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="deco-gaming">Déco gaming</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="mobilier-gaming">Mobilier Gaming</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="high-tech">Hight Tech</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="japan-collection">Japan Collection</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="fanbase">Fanbase</button>
+      </nav>
+
+      <form class="searchbar" role="search" aria-label="Recherche produits">
+        <input id="global-search" type="search" placeholder="Rechercher un produit, une marque, une catégorie…" aria-label="Rechercher" />
+        <button type="submit" aria-label="Lancer la recherche">Rechercher</button>
+      </form>
+    </div>
+  </header>
+
+  <!-- CONTENU -->
+  <main id="main" class="container">
+    <section class="tab-panels">
+
+      <!-- ACCUEIL -->
+      <div class="panel is-active" data-panel="accueil">
+        <div class="panel-box">
+          <h2 class="section-title">Sélections Accueil</h2>
+          <div class="grid-cards">
+            <article class="card"><h3>Bundle Streaming</h3><p>Micro USB, bras articulé, filtre anti-pop – prêt à streamer.</p><a class="btn" href="#">Voir</a></article>
+            <article class="card"><h3>Pack RGB Desk</h3><p>Bande LED, goulottes, serre-câbles – setup clean & néon.</p><a class="btn" href="#">Voir</a></article>
+            <article class="card"><h3>Moniteur 27” 165Hz</h3><p>IPS, 1ms, FreeSync – fluidité & couleurs au top.</p><a class="btn" href="#">Voir</a></article>
+          </div>
+        </div>
+      </div>
+
+      <!-- PC SETUP -->
+      <div class="panel" data-panel="pc-setup">
+        <div class="panel-box">
+          <h2 class="section-title">Pc Setup — Vitrine</h2>
+          <div class="grid-cards">
+            <article class="card"><h3>Boîtier ATX Verre</h3><p>Airflow optimisé, ARGB 4×120mm.</p><a class="btn" href="#">Voir</a></article>
+            <article class="card"><h3>GPU Aurora X</h3><p>12GB GDDR6, backplate holo.</p><a class="btn" href="#">Voir</a></article>
+            <article class="card"><h3>AIO 360 LCD</h3><p>Écran custom, pompes silencieuses.</p><a class="btn" href="#">Voir</a></article>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONSOLE SETUP -->
+      <div class="panel" data-panel="console-setup">
+        <div class="panel-box">
+          <h2 class="section-title">Console Setup — Vitrine</h2>
+          <div class="grid-cards">
+            <article class="card"><h3>Dock Charging</h3><p>Charge 2 manettes, LED statut.</p><a class="btn" href="#">Voir</a></article>
+            <article class="card"><h3>Support Mur TV</h3><p>Ultra-slim, gestion câbles.</p><a class="btn" href="#">Voir</a></article>
+            <article class="card"><h3>Headset 3D</h3><p>Audio spatial, micro rétractable.</p><a class="btn" href="#">Voir</a></article>
+          </div>
+        </div>
+      </div>
+
+      <!-- DÉCO GAMING -->
+      <div class="panel" data-panel="deco-gaming">
+        <div class="panel-box">
+          <h2 class="section-title">Déco Gaming — Vitrine</h2>
+          <div class="grid-cards">
+            <article class="card"><h3>Affiche Néon</h3><p>Art cyberpunk, papier premium.</p><a class="btn" href="#">Voir</a></article>
+            <article class="card"><h3>Cadres LED</h3><p>Ambilight mural modulable.</p><a class="btn" href="#">Voir</a></article>
+            <article class="card"><h3>Lampe Pixel</h3><p>Icônes animées, USB-C.</p><a class="btn" href="#">Voir</a></article>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILIER GAMING -->
+      <div class="panel" data-panel="mobilier-gaming">
+        <div class="panel-box">
+          <h2 class="section-title">Mobilier Gaming — Vitrine</h2>
+          <div class="grid-cards">
+            <article class="card"><h3>Bureau 140×70</h3><p>Gestion câbles, surface carbone.</p><a class="btn" href="#">Voir</a></article>
+            <article class="card"><h3>Chaise Ergo</h3><p>Accoudoirs 4D, mousse froide.</p><a class="btn" href="#">Voir</a></article>
+            <article class="card"><h3>Bras Double</h3><p>2× moniteurs, rotule fluide.</p><a class="btn" href="#">Voir</a></article>
+          </div>
+        </div>
+      </div>
+
+      <!-- HIGH TECH -->
+      <div class="panel" data-panel="high-tech">
+        <div class="panel-box">
+          <h2 class="section-title">Hight Tech — Vitrine</h2>
+          <div class="grid-cards">
+            <article class="card"><h3>Casque Hi-Fi</h3><p>Scène large, coussin velours.</p><a class="btn" href="#">Voir</a></article>
+            <article class="card"><h3>DAC/AMP USB</h3><p>32-bit, gain switchable.</p><a class="btn" href="#">Voir</a></article>
+            <article class="card"><h3>Hub USB-C</h3><p>7 ports, PD 100W.</p><a class="btn" href="#">Voir</a></article>
+          </div>
+        </div>
+      </div>
+
+      <!-- JAPAN COLLECTION -->
+      <div class="panel" data-panel="japan-collection">
+        <div class="panel-box">
+          <h2 class="section-title">Japan Collection — Vitrine</h2>
+          <div class="grid-cards">
+            <article class="card"><h3>Figurine 1/7</h3><p>Peinture premium, base LED.</p><a class="btn" href="#">Voir</a></article>
+            <article class="card"><h3>Nendoroid</h3><p>Visages swap, accessoires.</p><a class="btn" href="#">Voir</a></article>
+            <article class="card"><h3>Artbook JP</h3><p>Édition import, reliure luxe.</p><a class="btn" href="#">Voir</a></article>
+          </div>
+        </div>
+      </div>
+
+      <!-- FANBASE -->
+      <div class="panel" data-panel="fanbase">
+        <div class="panel-box">
+          <h2 class="section-title">Fanbase — Vitrine</h2>
+          <div class="grid-cards">
+            <article class="card"><h3>T-shirt Marvel</h3><p>Coton lourd, sérigraphie durable.</p><a class="btn" href="#">Voir</a></article>
+            <article class="card"><h3>Poster DBZ</h3><p>Format A2, papier satiné.</p><a class="btn" href="#">Voir</a></article>
+            <article class="card"><h3>Casquette OP</h3><p>Broderie 3D, ajustable.</p><a class="btn" href="#">Voir</a></article>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-bar">
+      <span>MasterSetup.gg © 2025 – Tous droits réservés</span>
+      <a href="#">Livraison</a>
+      <a href="#">Retours</a>
+      <a href="#">Sécurité</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
